@@ -70,7 +70,7 @@ document.querySelectorAll("[name=ball4]").forEach(
 function checkRow(argument) {
 	// vaststellen welke rij : rownr
 	// vaststellen of vakjes een achtergrondkleur hebben gekregen
-	var boxes = document.querySelectorAll('.rowNumber1 .attempt span')
+	var boxes = document.querySelectorAll('.rowNumber1 .attempt span', '.rowNumber2 .attempt span', '.rowNumber3 .attempt span', '.rowNumber4 .attempt span', '.rowNumber5 .attempt span', '.rowNumber6 .attempt span', '.rowNumber7 .attempt span', '.rowNumber8 .attempt span', '.rowNumber9 .attempt span', '.rowNumber10 .attempt span', '.rowNumber11 .attempt span', '.rowNumber12 .attempt span')
 	console.dir(boxes);
 	console.log('ga checken');
 	var attempt = [];
@@ -85,6 +85,7 @@ function checkRow(argument) {
 	result = check(rand,attempt);
 	console.dir (result);
 }
+
 
 function check (rand, attempt){
 // fase 1 check right number in right position
@@ -113,6 +114,11 @@ function check (rand, attempt){
         }
     }
     return {black: black, white: white};
+    if (black > 0) {
+    	for (black > 0; black < Things.length; black++) {
+    		Things[black]
+    	}
+    }
 }
 
 var result = check(rand,attempt);
